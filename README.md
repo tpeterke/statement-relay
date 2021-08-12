@@ -1,12 +1,12 @@
 # statement-relay
 This development will pull statements from bank(s) and create transactions in Waveapps (only Wise for now).
 
+
+
 LICENCE.md extended as following
 ================================
   16. Limitation of Liability.
-
 ....
-
 IMPORTANT TO REMEMBER THAT THIS SOLUTION USES / INTENDED TO USE
 GOOGLE CLOUD PLATFORM (GCP) AND ITS SERVICES. THIS AUTOMATICALLY GENERATES
 COSTS PAYABLE TO GOOGLE CLOUD PLATFORM WHICH MAY OR MAY NOT BE WAIVED AS
