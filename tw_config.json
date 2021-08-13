@@ -1,0 +1,94 @@
+{
+    "transfers": [
+        {
+            "type": "transferwise",
+            "from": {
+                "profileId": "<YOUR_WISE_PERSONAL_PROFILE_ID>",
+                "accountId": "<YOUR_WISE_PERSONAL_ACCOUNT_ID>",
+                "currency": "CAD"
+            },
+            "to": {
+                "businessId": "<BUSINESS_ID_OF_YOUR_PERSONAL_WAVEAPPS_BUSINESS>",
+                "accountId": "<ID_OF_YOUR_BANK_ACCOUNT_IN_WAVEAPPS_THAT_MATCHES_YOUR_PERSONAL_ACCOUNT_AT_WISE_AND_ITS_CURRENCY>",
+                "lineItemIdDeposit": "<ACCOUNT_ID_OF_YOUR_PERSONAL_UNCATEGORIZED_INCOME_ACCOUNT>",
+                "lineItemIdWithdraw": "<ACCOUNT_ID_OF_YOUR_PERSONAL_UNCATEGORIZED_EXPENSE_ACCOUNT>",
+                "timezone": "<TIMEZONE_OF_YOUR_HOME_SAY:America/Toronto"
+            }
+        },
+        {
+            "type": "transferwise",
+            "from": {
+                "profileId": "<YOUR_WISE_PERSONAL_PROFILE_ID>",
+                "accountId": "<YOUR_WISE_PERSONAL_ACCOUNT_ID>",
+                "currency": "EUR"
+            },
+            "to": {
+                "businessId": "<BUSINESS_ID_OF_YOUR_PERSONAL_WAVEAPPS_BUSINESS>",
+                "accountId": "<ID_OF_YOUR_BANK_ACCOUNT_IN_WAVEAPPS_THAT_MATCHES_YOUR_PERSONAL_ACCOUNT_AT_WISE_AND_ITS_CURRENCY>",
+                "lineItemIdDeposit": "<ACCOUNT_ID_OF_YOUR_PERSONAL_UNCATEGORIZED_INCOME_ACCOUNT>",
+                "lineItemIdWithdraw": "<ACCOUNT_ID_OF_YOUR_PERSONAL_UNCATEGORIZED_EXPENSE_ACCOUNT>",
+                "timezone": "<TIMEZONE_OF_YOUR_HOME_SAY:America/Toronto"
+            }
+        },
+        {
+            "type": "transferwise",
+            "from": {
+                "profileId": "<YOUR_WISE_PERSONAL_PROFILE_ID>",
+                "accountId": "<YOUR_WISE_PERSONAL_ACCOUNT_ID>",
+                "currency": "USD"
+            },
+            "to": {
+                "businessId": "<BUSINESS_ID_OF_YOUR_PERSONAL_WAVEAPPS_BUSINESS>",
+                "accountId": "<ID_OF_YOUR_BANK_ACCOUNT_IN_WAVEAPPS_THAT_MATCHES_YOUR_PERSONAL_ACCOUNT_AT_WISE_AND_ITS_CURRENCY>",
+                "lineItemIdDeposit": "<ACCOUNT_ID_OF_YOUR_PERSONAL_UNCATEGORIZED_INCOME_ACCOUNT>",
+                "lineItemIdWithdraw": "<ACCOUNT_ID_OF_YOUR_PERSONAL_UNCATEGORIZED_EXPENSE_ACCOUNT>",
+                "timezone": "<TIMEZONE_OF_YOUR_HOME_SAY:America/Toronto"
+            }
+        },
+        {
+            "type": "transferwise",
+            "from": {
+                "profileId": "<YOUR_WISE_COMPANY_PROFILE_ID>",
+                "accountId": "<YOUR_WISE_COMPANY_ACCOUNT_ID>",
+                "currency": "CAD"
+            },
+            "to": {
+                "businessId": "<BUSINESS_ID_OF_YOUR_COMPANY_WAVEAPPS_BUSINESS>",
+                "accountId": "<ID_OF_YOUR_BANK_ACCOUNT_IN_WAVEAPPS_THAT_MATCHES_YOUR_COMPANY_ACCOUNT_AT_WISE_AND_ITS_CURRENCY>",
+                "lineItemIdDeposit": "<ACCOUNT_ID_OF_YOUR_COMPANY_UNCATEGORIZED_INCOME_ACCOUNT>",
+                "lineItemIdWithdraw": "<ACCOUNT_ID_OF_YOUR_COMPANY_UNCATEGORIZED_EXPENSE_ACCOUNT>",
+                "timezone": "<TIMEZONE_OF_YOUR_HOME_SAY:America/Toronto"
+            }
+        },
+        {
+            "type": "transferwise",
+            "from": {
+                "profileId": "<YOUR_WISE_COMPANY_PROFILE_ID>",
+                "accountId": "<YOUR_WISE_COMPANY_ACCOUNT_ID>",
+                "currency": "EUR"
+            },
+            "to": {
+                "businessId": "<BUSINESS_ID_OF_YOUR_COMPANY_WAVEAPPS_BUSINESS>",
+                "accountId": "<ID_OF_YOUR_BANK_ACCOUNT_IN_WAVEAPPS_THAT_MATCHES_YOUR_COMPANY_ACCOUNT_AT_WISE_AND_ITS_CURRENCY>",
+                "lineItemIdDeposit": "<ACCOUNT_ID_OF_YOUR_COMPANY_UNCATEGORIZED_INCOME_ACCOUNT>",
+                "lineItemIdWithdraw": "<ACCOUNT_ID_OF_YOUR_COMPANY_UNCATEGORIZED_EXPENSE_ACCOUNT>",
+                "timezone": "<TIMEZONE_OF_YOUR_HOME_SAY:America/Toronto"
+            }
+        },
+        {
+            "type": "transferwise",
+            "from": {
+                "profileId": "<YOUR_WISE_COMPANY_PROFILE_ID>",
+                "accountId": "<YOUR_WISE_COMPANY_ACCOUNT_ID>",
+                "currency": "USD"
+            },
+            "to": {
+                "businessId": "<BUSINESS_ID_OF_YOUR_COMPANY_WAVEAPPS_BUSINESS>",
+                "accountId": "<ID_OF_YOUR_BANK_ACCOUNT_IN_WAVEAPPS_THAT_MATCHES_YOUR_COMPANY_ACCOUNT_AT_WISE_AND_ITS_CURRENCY>",
+                "lineItemIdDeposit": "<ACCOUNT_ID_OF_YOUR_COMPANY_UNCATEGORIZED_INCOME_ACCOUNT>",
+                "lineItemIdWithdraw": "<ACCOUNT_ID_OF_YOUR_COMPANY_UNCATEGORIZED_EXPENSE_ACCOUNT>",
+                "timezone": "<TIMEZONE_OF_YOUR_HOME_SAY:America/Toronto"
+            }
+        }
+    ]
+}
