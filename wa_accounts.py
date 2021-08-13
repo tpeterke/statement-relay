@@ -1,10 +1,5 @@
 import requests
 import json
-import os
-import sys
-from datetime import datetime, timedelta, timezone
-import pytz
-
 
 
 accessToken = "<YOUR_FULL_ACCESS_TOKEN>"
