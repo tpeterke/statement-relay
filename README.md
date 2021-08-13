@@ -73,6 +73,15 @@ Create a Full Access token that you will use in the next steps.
 Step 7
 ------
 While still logged in to your Waveapps account, run Waveapps' first and default example query in very own API playground:
+  
   https://developer.waveapps.com/hc/en-us/articles/360018937431-API-Playground
+
 ...or run wa_businesses.py from this repository. Don't forget to maintain your API token in the code!
 Make a note of the business IDs.
+
+Step 8
+------
+  BE SURE THAT ALL YOUR ACCOUNTS IN WISE ARE ALREADY CREATED IN WAVEAPPS BEFORE RUNNING THIS!!!
+  Using each business IDs obtained in Step 7 run the wa_accounts.py from this repository. Don't forget to edit the API token and the Business ID for each run.
+Make note of the output. It will contain Account IDs for your bank accounts and the Uncategorized Income and Uncategorized Expense for each of your businesses. Your personal account is a business too!
+  
