@@ -64,6 +64,8 @@ In GCP Secret Manager create a new secret with the name "TW_TOKEN" and the value
 Step 6
 ------
 Login to Waveapps and then go to "Wave > Developer Portal > Documentation > Create an App":
+  
   https://developer.waveapps.com/hc/en-us/articles/360019762711
+
 Only name is important and the "I agree" at the end of the page.
 Create a Full Access token that you will use in the next steps.
