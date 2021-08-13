@@ -6,7 +6,9 @@ This development will pull statements from bank(s) and create transactions in Wa
 LICENCE.md extended as following
 ================================
   16. Limitation of Liability.
+  
   ....
+  
   IMPORTANT TO REMEMBER THAT THIS SOLUTION USES / INTENDED TO USE
 GOOGLE CLOUD PLATFORM (GCP) AND ITS SERVICES. THIS AUTOMATICALLY GENERATES
 COSTS PAYABLE TO GOOGLE CLOUD PLATFORM WHICH MAY OR MAY NOT BE WAIVED AS
@@ -86,6 +88,19 @@ Make note of the output. It will contain Account IDs for your bank accounts and 
 Step 9
   -------------
   Go back to Manage Application site in Waveapps:
+  
   https://developer.waveapps.com/hc/en-us/articles/360019762711
+  
   Revoke your Full Access token and create a new one. Copy the new value and go to the Secret Manager in GCP.
   Create a new secret with the name "WA_TOKEN" and value would be the new token that you just created.
+
+  Step 10
+  -------------
+  Edit tw_config.json file from this repository tailoring it to your specific case using data obtained in steps 2, 3 and 8.
+  In Secret Manager create a secret with the name "tw_config_json" and upload this file here.
+  
+  Step 11
+  ----------
+  In Cloud Functions of GCP create a new function with default values, but set the endpoint to "main". Copy content of main.py from this repository to the Cloud function's main.py and the contents of reqquirements.txt from this repository to the requirements.txt in Cloud Functions.
+  Once it's deployed, test it. It has to give an error.
+  
