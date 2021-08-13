@@ -19,6 +19,7 @@ PLATFORM.
 Assumptions
 ===========
 - You already set up a Google Cloud Platform (GCP) account and it is billable.
+- You have created a new project, activated Cloud Functions, Secret Management and Cloud Scheduler APIs.
 
 Steps to follow
 ===============
@@ -55,3 +56,14 @@ Step 4
 Return to Wise.com, in the Settings menu navigate to API tokens and delete
 the token you have used in the previous steps. While you are here,
 create a new token for the next step.
+
+Step 5
+------
+In GCP Secret Manager create a new secret with the name "TW_TOKEN" and the value will be the token you generated in Step 4.
+
+Step 6
+------
+Login to Waveapps and then go to "Wave > Developer Portal > Documentation > Create an App":
+  https://developer.waveapps.com/hc/en-us/articles/360019762711
+Only name is important and the "I agree" at the end of the page.
+Create a Full Access token that you will use in the next steps.
