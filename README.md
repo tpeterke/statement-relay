@@ -69,3 +69,10 @@ Login to Waveapps and then go to "Wave > Developer Portal > Documentation > Crea
 
 Only name is important and the "I agree" at the end of the page.
 Create a Full Access token that you will use in the next steps.
+  
+Step 7
+------
+While still logged in to your Waveapps account, run Waveapps' first and default example query in very own API playground:
+  https://developer.waveapps.com/hc/en-us/articles/360018937431-API-Playground
+...or run wa_businesses.py from this repository. Don't forget to maintain your API token in the code!
+Make a note of the business IDs.
