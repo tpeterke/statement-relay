@@ -101,6 +101,18 @@ Step 9
   
   Step 11
   ----------
-  In Cloud Functions of GCP create a new function with default values, but set the endpoint to "main". Copy content of main.py from this repository to the Cloud function's main.py and the contents of reqquirements.txt from this repository to the requirements.txt in Cloud Functions.
+  In Cloud Functions of GCP create a new function with default values, but set HTTPS required and the endpoint to "main". Copy content of main.py from this repository to the Cloud function's main.py and the contents of reqquirements.txt from this repository to the requirements.txt in Cloud Functions.
   Once it's deployed, test it. It has to give an error.
+  
+  Step 12
+  -------
+  In GCP go to IAM/Service accounts and create a new account with the name "cf-invoker".
+  Head over to Cloud functions, the one that you created and under permissions add the new "cf-invoker" user with the role "Cloud Function Invoker".
+  Head over to Secrete Manager and for each of your secrets add "cf-invoker" account with the role "Secret Manager Secret Accessor".
+  
+  Step 13
+  -------
+Go to Cloud Scheduler and schedule a job. For hourly run use "0 * * * *" frequency. Job target will be the HTTP type URL of your with GET method.
+  In header User-Agent Google-Cloud-Scheduler will be default, you just have to set OIDC token and the servcie account will be the new "cf-invoker" account.
+  
   
