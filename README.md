@@ -34,20 +34,20 @@ Important: this is only for temporary use!
 
 Step 2
 ------
-Replacing <xxxxx> with your API key acquired in Step 1, run following command
+Replacing XXXXX with your API key acquired in Step 1, run following command
 in your local terminal ("cmd" command in Windows) to learn IDs of your profiles.
   
-  curl -X GET https://api.transferwise.com/v1/profiles -H "Authorization: Bearer <xxxxx>"
+  curl -X GET https://api.transferwise.com/v1/profiles -H "Authorization: Bearer XXXXX"
   
 Save the output for later use.
 
 Step 3
 ------
-Similarly, run the following command replacing <xxxxx> with your API key and
+Similarly, run the following command replacing XXXXX with your API key and
 <profileID> with the profile IDs that you can find in the output of the
 previous step. Run this command for each of your profiles:
   
-  curl -X GET https://api.transferwise.com/v1/borderless-accounts?profileId=<profileID> -H "Authorization: Bearer <xxxxx>"
+  curl -X GET https://api.transferwise.com/v1/borderless-accounts?profileId=<profileID> -H "Authorization: Bearer XXXXX"
 
 Save the output of each runs for later use.
 
