@@ -115,4 +115,15 @@ Step 9
 Go to Cloud Scheduler and schedule a job. For hourly run use "0 * * * *" frequency. Job target will be the HTTP type URL of your with GET method.
   In header User-Agent Google-Cloud-Scheduler will be default, you just have to set OIDC token and the servcie account will be the new "cf-invoker" account.
   
+  In case you find unexpected amounts on your GCP bill
+  ====================================================
+  Credit to @vir-us https://stackoverflow.com/a/64086856/15115806
   
+  Credit to @frank-van-puffelen https://stackoverflow.com/a/63580047/15115806
+  
+  All the above process alone should not generate any charges beyond the free tier given by Google. Yet, I started seeing $0.02 charges monthly.
+  
+  If you see an unexpected amount on your GCP bill and you determine it comes from Cloud Storage, that might be because of Cloud Build piling up temporary files in us.artifacts.<YOUR_PROJECT'S_NAME>.appspot.com. The above two articles contradict each other.
+    
+  I decided to setup a 3 days deletion operation in this folder's lifecycle and hope to remember to delete the "container" folder if something goes wrong.
+    
