@@ -126,4 +126,8 @@ Go to Cloud Scheduler and schedule a job. For hourly run use "0 * * * *" frequen
   If you see an unexpected amount on your GCP bill and you determine it comes from Cloud Storage, that might be because of Cloud Build piling up temporary files in us.artifacts.<YOUR_PROJECT'S_NAME>.appspot.com. The above two articles contradict each other.
     
   I decided to setup a 3 days deletion operation in this folder's lifecycle and hope to remember to delete the "container" folder if something goes wrong.
-    
+
+  Update on Secrets
+  =================
+  Later I found out that secrets can be exposed as environment variables and can be mounted as volume in Configuration/Runtime, build, connections and security settings/security. This would, of course greatly simplify the code. Desktop version could be applied without change. I just did not take the time (yet) to rework the code.
+  
