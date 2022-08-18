@@ -243,10 +243,23 @@ def main(args):
                         # variables['input']['lineItems'][0]['balance'] = "DECREASE"
                         variables['input']['lineItems'][0]['accountId'] = transfer["to"]["lineItemIdWithdraw"]
                     else:  # "TRANSFER" or "CARD"
-                        variables['input']['notes'] = variables['input']['notes'] + \
-                            "\nRecipient's Name: " + transaction["details"]["recipient"]["name"] + \
-                            "\nRecipient's Account: " + \
-                            transaction["details"]["recipient"]["bankAccount"]
+                        try:
+                            variables['input']['notes'] = variables['input']['notes'] + \
+                                "\nRecipient's Name: " + transaction["details"]["recipient"]["name"] + \
+                                "\nRecipient's Account: " + \
+                                transaction["details"]["recipient"]["bankAccount"]
+                        except:
+                            pass
+                        try:
+                            variables['input']['notes'] = variables['input']['notes'] + \
+                                "\nRecipient's Name: " + transaction["details"]["merchant"]["name"] + \
+                                "\n" + \
+                                transaction["details"]["cardLastFourDigits"] + \
+                                " - " + \
+                                transaction["details"]["cardHolderFullName"]
+                        except:
+                            pass
+
                         variables['input']['anchor']['direction'] = "WITHDRAWAL"
                         # variables['input']['lineItems'][0]['balance'] = "DECREASE"
                         variables['input']['lineItems'][0]['accountId'] = transfer["to"]["lineItemIdWithdraw"]
